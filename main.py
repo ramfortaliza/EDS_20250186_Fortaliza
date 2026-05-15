@@ -51,7 +51,7 @@ def create_visuals(df):
 
         plt.figure(figsize=(12, 8))
         sns.heatmap(df.corr(numeric_only=True), annot=True, cmap='coolwarm', fmt=".2f")
-        plt.title("Technical Correlation Matrix: Acoustic Sensor Features", pad=20)
+        plt.title("Ram Cedric Fortaliza (20250186)\nTechnical Correlation Matrix: Acoustic Sensor Features", pad=20)
         plt.tight_layout()
         plt.savefig("outputs/heatmap.png")
         plt.close()
@@ -59,7 +59,7 @@ def create_visuals(df):
         plt.figure(figsize=(12, 7))
         sensor_cols = ['Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]']
         sns.boxplot(data=df[sensor_cols])
-        plt.title("Boxplot Analysis: Sensor Range & Outlier Identification", pad=20)
+        plt.title("Ram Cedric Fortaliza (20250186)\nBoxplot Analysis: Sensor Range & Outlier Identification", pad=20)
         plt.xticks(rotation=45, ha='right')
         plt.xlabel("Physical Measurement Parameters")
         plt.ylabel("Measurement Amplitude")
@@ -69,7 +69,7 @@ def create_visuals(df):
 
         plt.figure(figsize=(10, 6))
         sns.kdeplot(data=df, x="Torque [Nm]", hue="Machine failure", fill=True)
-        plt.title("Probability Density: Torque Distribution (Normal vs. Failure)", pad=15)
+        plt.title("Ram Cedric Fortaliza (20250186)\nProbability Density: Torque Distribution (Normal vs. Failure)", pad=20)
         plt.xlabel("Applied Torque [Nm]")
         plt.ylabel("Kernel Density Estimate")
         plt.tight_layout()
@@ -78,7 +78,7 @@ def create_visuals(df):
         
         plt.figure(figsize=(10,6))
         plt.hist(df["Torque [Nm]"], bins=20)
-        plt.title("Torque Distribution Histogram")
+        plt.title("Ram Cedric Fortaliza (20250186)\nTorque Distribution Histogram", pad=20)
         plt.xlabel("Torque [Nm]")
         plt.ylabel("Frequency")
         plt.tight_layout()
@@ -90,7 +90,7 @@ def create_visuals(df):
         line1, = ax1.plot([], [], color='red', lw=2)
         ax1.set_xlim(0, 100)
         ax1.set_ylim(y_torque.min()-5, y_torque.max()+5)
-        ax1.set_title("Time-Series Telemetry: Torque Variability")
+        ax1.set_title("Ram Cedric Fortaliza (20250186)\nTime-Series Telemetry: Torque Variability", pad=20)
         ax1.set_xlabel("Time Step (T)")
         ax1.set_ylabel("Torque Magnitude [Nm]")
         plt.tight_layout()
@@ -106,7 +106,7 @@ def create_visuals(df):
         line2, = ax2.plot([], [], color='blue', lw=2)
         ax2.set_xlim(0, 100)
         ax2.set_ylim(y_speed.min()-50, y_speed.max()+50)
-        ax2.set_title("Time-Series Telemetry: Rotational Velocity")
+        ax2.set_title("Ram Cedric Fortaliza (20250186)\nTime-Series Telemetry: Rotational Velocity", pad=20)
         ax2.set_xlabel("Time Step (T)")
         ax2.set_ylabel("Speed [rpm]")
         plt.tight_layout()

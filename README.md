@@ -4,7 +4,7 @@
 Engineering Data Systems Final Project
 
 ## Dataset
-Machine Failure Predictions Dataset from Kaggle
+Machine Failure Predictions Dataset from Kaggle. Thapa, S. (2025).
 
 ## Features
 - Data Cleaning
