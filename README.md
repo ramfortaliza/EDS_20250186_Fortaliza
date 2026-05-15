@@ -17,6 +17,8 @@ Machine Failure Predictions Dataset from Kaggle. Thapa, S. (2025).
 - numpy
 - matplotlib
 - seaborn
+- spicy
+- pillow
 
 ## Run
 
